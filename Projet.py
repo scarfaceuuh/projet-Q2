@@ -2,7 +2,8 @@
 #PRÉ-PHASE **********************
 def game_management():
     """
-        Regroupe les informations de l'ui, de portails et des astéroides.
+        Regrouping informations of UI, portals, asteroids.
+        
 
         version:
         -------
@@ -15,8 +16,8 @@ def create_ui (nbr_line,nbr_column):
 
         Paramètres:
         -----------
-        nbr_line: nombre de lignes en y (int)
-        nbr_column: nombre de colonnes en x (int)
+        nbr_line: lines number in y (int)
+        nbr_column: columns number in x (int)
 
         Version:
         --------
@@ -25,14 +26,14 @@ def create_ui (nbr_line,nbr_column):
     """
 def create_portals (pos_1_line,pos_1_column,pos_2_line,pos_2_column):
     """
-        Mise en place et attribution des points de vie des portals
+        Setup and live points attribution of the portals
 
-        Paramètres:
+        Parameters:
         -----------
-        pos_1_line: position en x du premier portail
-        pos_1_column: position en y du premier portail
-        pos_2_line: position en x du second portail
-        pos_2_column: position en y du second portail
+        pos_1_line: x position of first portal
+        pos_1_column: y position of first portal
+        pos_2_line: x position of second portal
+        pos_2_column: y position of second portal
 
         Version:
         --------
@@ -49,6 +50,7 @@ def create_asteroids():
 def phase_one():
     """
         regrouper les informations sur les vaisseaux
+        
 
         Version:
         --------
@@ -57,37 +59,37 @@ def phase_one():
 
 def store(ores):
     """
-        Achat de vaisseaux
+        spaceship purchase
 
-        parameter:
+        parameters:
         ----------
-        ores: nombre de minerais (int)
+        ores: ore quantity(int)
 
         Note:
         -----
-        Le nombre de minerais doit être strictement positif
+        ore number must be strictly positive
 
         version:
         --------
         specification: Beyers Bruno (v.1 03/03/18)
 
     """
-def vaisseau ()
+def spaceship ()
     """
-        rechercher les caractéristiques des vaisseaux dans un fichier
+        search spaceships characteristics in a file
     :return: 
     """
 def attack(damage, scope):
-    """ attaque l'adversaire si la porté est suffisante
+    """ attack the ennemy if the scope is enough
 
         parameters:
         -----------
-        damage: Points de dégat infliger (int)
-        scope: portée de l'attaque (int)
+        damage: inflicted damages (int)
+        scope: attack scope (int)
 
         Note:
         ----
-        La portée et les dégats doivent être strictement positif
+        scope and damages must be strictly positive
 
         version:
         --------
@@ -97,17 +99,17 @@ def attack(damage, scope):
 #PHASE 2 **********************************
 def lock_unlock_asteroid(pos_x_asteroid,pos_y_asteroid):
     """
-        Verrouiller et déverouille un astéroide, pour la récole automatique
+        lock and unlock an asteroid, for automatic collect
 
-        Paramètres:
+        Parameters:
         -----------
-        pos_x_asteroid: position en x d'un astéroide
-        pos_y_asteroid: poistion y d'un astéroide
+        pos_x_asteroid: x position of an asteroid
+        pos_y_asteroid: y position of an asteroid
 
-        Note:
+        Notes:
         -----
-        La postion verouillée doit contenir un astéroide
-        Ne peut être lock que par un extracteur
+        locked position must contain an asteroid
+        must be only locked by an exctractor
 
         Version:
         --------
@@ -115,12 +117,14 @@ def lock_unlock_asteroid(pos_x_asteroid,pos_y_asteroid):
     """
 def lock_unlock_portail(pos_1_column,pos_1_line):
     """
-        pos_1_line: position en x du premier portail
-        pos_1_column: position en y du premier portail
+        Parameters:
+        -----------
+        pos_1_line: x position of first portal
+        pos_1_column: y position of first portal
 
-        Note:
+        Notes:
         -----
-        Ne peut être lock que par un extracteur
+        must be only locked by an exctractor
 
         Version:
         --------
@@ -131,15 +135,15 @@ def lock_unlock_portail(pos_1_column,pos_1_line):
 
 
     # def health(health):
-    """ Points de vie des portails et vaisseaux
+    """ health points of portals and spaceships
 
-        Parameter:
+        Parameters:
         ----------
-        healt: Point de vie (int)
+        health: health points (int)
 
-        Note:
+        Notes:
         -----
-        Le vie doit être strictement positive 
+        health points must be strictly positive
 
         version:
         --------
