@@ -2,7 +2,7 @@
 #PRÉ-PHASE **********************
 def game_management():
     """
-        Fait appel fonctions avec les informations de l'ui, des portails et des astéroides.
+        calling functions with informations from UI, portals and asteroids.
 
         version:
         -------
@@ -11,7 +11,7 @@ def game_management():
 
 def create_ui ():
     """
-        Création de l'interface graphique.
+        Creating graphic interface.
 
         Version:
         --------
@@ -20,12 +20,12 @@ def create_ui ():
     """
 def create_portals():
     """
-        Mise en place des portails
+        portals setup
 
         Return:
         -------
-        portail_axe: Postion, vie et emplacement du portail allié (dico)
-        portail_allie: Postion, vie et emplacement du portail ennemi (dico)
+        portail_axe: Position and live of allied portal (dico)
+        portail_allie: Position and live of ennemy portal (dico)
 
         Version:
         --------
@@ -33,7 +33,7 @@ def create_portals():
     """
 def create_asteroids():
     """
-        Mise en place des asteroids
+        Setup of asteroids
 
         Return:
         -------
@@ -47,61 +47,62 @@ def create_asteroids():
 #PHASE 1 **************************
 def phase_one():
     """
-        Appel les fonctions de la phase une
+        calling phase one functions
 
         Version:
         --------
         specification: Beyers Bruno (v1.0 03/02/18)
     """
 
-def ores(Structure_de_donnees):
+def ores(data_structures):
     """
-        Indique le nombre d'ores des joueurs
+        show players ores number
 
-        Paramètre:
+        Parameters:
         ----------
-        Structure_de_donnees: Nombre de minerais dans la structure de données (dictionnaire(int))
+        data_structures: ore number in the data structure (dict(int))
+        
 
         Note:
         -----
-        Doit être strictement positif
-        4 ores offert au début de partie
-        La structure de donnée n'a pas encore de nom (variable)
+        Must be strictly positive
+        4 ores are given when game start
+        data structure don't already have a name (variable)
 
         Returns:
         --------
-        nbr_ores: Nombre d'ores actuel (int)
+        nbr_ores: ore number (int)
 
         Version:
         --------
-        spécification: Beyers Bruno (v1.0 05/03/18)
+        specification: Beyers Bruno (v1.0 05/03/18)
     
      """
 
 def store(nbr_ores):
     """
-        Achat de vaisseaux
+        spaceships purchase
 
         parameter:
         ----------
-        Structure_de_donnees: nombre de minerais disponible (dictionnaire(int))
+        data_structure: ore number available (dict(int))
 
         Note:
         -----
-        Le nombre de minerais doit être strictement positif
+        ore number must be strictly positive
 
         version:
         --------
         specification: Beyers Bruno (v.1 03/03/18)
 
     """
-def get_stats_vaisseaux(type):
+def get_stats_spaceships(type):
     """
-        rechercher les caractéristiques des vaisseaux dans la structure de données
+        search spaceships caracteristics in the data structure
 
-        Paramètres:
+        Parameters:
         -----------
-        type: type du vaisseau (dictionnaire(float))
+        type:nspaceship type (dict(float))
 
         Note:
         -----
@@ -109,24 +110,24 @@ def get_stats_vaisseaux(type):
 
         Return:
         -------
-        type_vaisseau: Renvois la taille, tonnage, vie, attaque, portée et coup d'un vaisseau (liste)
+        type_spaceship: return the size, volume, life, attack, scope and price of a spaceship (list)
 
         Version:
         --------
-        spécification: Beyers Bruno (v1.0 05/03/18)
+        specification: Beyers Bruno (v1.0 05/03/18)
     """
 def spawn_vaisseaux(pos_portail_x,pos_portail_y):
     """
-        Fait apparaître les vaisseaux au centre de portail
+        spawn spacehips in portals center
 
-        Paramètres:
+        Parameters:
         -----------
-        pos_portail_x: position x du centre du portail
-        pos_portail_y: position y du centre du portail
+        pos_portail_x: x position of the portal
+        pos_portail_y: y position of the portal
 
         Note:
         -----
-        Ne peut apparaître qu'au centre du portail
+        must only appear in portal center
         Version:
         --------
         specification: Beyers Bruno (v1.0 05/03/18)
@@ -137,7 +138,7 @@ def spawn_vaisseaux(pos_portail_x,pos_portail_y):
 #PHASE 2 **********************************
 def phase_two():
     """
-        Appel les fonctions de la phase deux
+        calling phase two fucntions
 
         Version:
         --------
@@ -145,11 +146,11 @@ def phase_two():
     """
 def lock():
     """
-        Verrouiller un astéroide pour la récole automatique
+        Lock an asteroid for automatic harvest
 
         Note:
         -----
-        Ne peut être lock que par un extracteur
+        can only be locked by an excavator
 
         Version:
         --------
@@ -157,7 +158,7 @@ def lock():
     """
 def Unlock():
     """
-        Déverouille un astéroide pour la récole automatique
+        unlock an asteroid for automatic harvest
 
         Version:
         --------
@@ -166,7 +167,7 @@ def Unlock():
 #PHASE 3 *************************************************
 def phase_three():
     """
-        Appel les fonctions de la phase trois
+        calling phase three functions
 
         Version:
         --------
@@ -174,37 +175,37 @@ def phase_three():
     """
 
 def attack(type_vaisseau):
-    """ attaque l'adversaire 
+    """ attack the ennemy
 
         parameters:
         -----------
-        type_vaisseau: Caractéristique (attaque/portée) du vaisseau sélectionné (liste)
+        type_spaceship: caracteristic (attack/scope) of the selected spaceship (list)
 
         Note:
         ----
-        La portée et les dégats doivent être strictement positif
-        Les extracteurs ne peuvent attaquer
+        scope and damages must be strictly positive
+        excavators can't attack
 
         version:
         --------
         specification: Beyers Bruno (v.1 02/03/18)
     """
-def deplacement(structure_de_donnees):
+def moes(data_structure):
     """
-        Déplace le vaisseau
+        move spaceship
         
-        Paramètres:
+        Parameters:
         -----------
-        structure_de_donnees: emplacement du vaisseau actuel (dictionnaire(liste(int)))
+        data_structure: position of the selected spaceship (dict(list(int)))
         
         Note:
         -----
-        La structure de donnée n'a pas encore de nom (variable)
-        Ne peut se déplacer hors de l'UI
+        data_structure don't already have a name(variable)
+        can't move out of UI
         
         return:
         -------
-        Vaissseau_emplacement: Coordonnée du vaisseau une fois déplacé (liste(int))
+        spaceship_position: spaceship coordinates after have been moved(list(int))
         
         Version:
         --------
@@ -212,19 +213,19 @@ def deplacement(structure_de_donnees):
         
     """
     
-def end(nbr_tour,health_portail):
+def end(nbr_turn,health_portail):
     """
-        Met fin à la partie
+        ends the game
     
-        Paramètres:
+        Parameters:
         -----------
-        nbr_tour: nombre de tour sans dégât occasionné(int)
-        health_portail: Point de vie du portail(int)
+        nbr_turn: turn number without any taken damages (int)
+        health_portail: health points of the portal(int)
         
         Note:
         -----
-        La partie se termine si 20 tour se sont passé sans dégât occasionné
-        La parti se termine si la vie du portail est à 0
+        the game ends if 20 turns have been done without any taken damages
+        the game ends if portal heatlh is at 0
         
         Version:
         --------
@@ -235,27 +236,27 @@ def end(nbr_tour,health_portail):
 #PHASE 4 *********************************
 def phase_four():
     """
-        Appel les fonctions de la phase quatre
+        calling phase four functions
 
         Version:
         --------
         specification: Beyers Bruno (v1.0 03/02/18)
    """
-def asteroid_epuise(structure_de_donnees):
+def asteroid_sold_out(data_structure):
     """
-        Répartis équitablement les ores en cas d'épuisement
+        distributed the ores fairly in case of sold out
 
-        Paramètres:
+        Parameters:
         -----------
-        structure_de_donnees: Nombre d'ores restant dans la structure de donnees (Dictionnaire(int))
+        data_structure: ore number left in the data structure(dict(int))
         
         Note:
         -----
-        La structure de donnée n'a pas encore de nom (variable)
+        data structure don't already have a name(variable)
         
         Return:
         -------
-        nbr_ores: Nombre d'ores attribué au joueur(int)
+        nbr_ores: ore number distributed to the player(int)
         
         Version:
         --------
