@@ -21,7 +21,7 @@ def create_ui (nbr_line,nbr_column):
 
         Version:
         --------
-        specification: Beyers Bruno (v1.1 03/03/18)
+        specification: Beyers Bruno (v1 03/03/18)
 
     """
 def create_portals (pos_1_line,pos_1_column,pos_2_line,pos_2_column):
@@ -37,7 +37,7 @@ def create_portals (pos_1_line,pos_1_column,pos_2_line,pos_2_column):
 
         Version:
         --------
-        specification: Beyers Bruno (v1.0 03/03/18)
+        specification: Beyers Bruno (v1 03/03/18)
 
 
     """
@@ -54,7 +54,7 @@ def phase_one():
 
         Version:
         --------
-        specification: Beyers Bruno (v1.0 03/02/18)
+        specification: Beyers Bruno (v1 03/02/18)
     """
 
 def store(ores):
@@ -97,9 +97,9 @@ def attack(damage, scope):
     """
 
 #PHASE 2 **********************************
-def lock_unlock_asteroid(pos_x_asteroid,pos_y_asteroid):
+def lock_asteroid(pos_x_asteroid,pos_y_asteroid):
     """
-        lock and unlock an asteroid, for automatic collect
+        lock an asteroid, for automatic collect
 
         Parameters:
         -----------
@@ -113,9 +113,28 @@ def lock_unlock_asteroid(pos_x_asteroid,pos_y_asteroid):
 
         Version:
         --------
-        specification: Beyers Bruno (v1.0 04/03/18)
+        specification: Beyers Bruno (v1 04/03/18)
+                       Prignon Alan (v2 05/03/18)
     """
-def lock_unlock_portail(pos_1_column,pos_1_line):
+def unlock_asteroid(pos_x_asteroid,pos_y_asteroid):
+    """
+        unlock an asteroid
+
+        Parameters:
+        -----------
+        pos_x_asteroid: x position of an asteroid
+        pos_y_asteroid: y position of an asteroid
+
+        Notes:
+        -----
+        must be lock before by an exctractor
+
+        Version:
+        --------
+        specification: Prignon Alan (v1 05/03/18)
+    """
+    
+def lock_portail(pos_1_column,pos_1_line):
     """
         Parameters:
         -----------
@@ -128,7 +147,22 @@ def lock_unlock_portail(pos_1_column,pos_1_line):
 
         Version:
         --------
-        specification: Beyers Bruno (v1.0 05/03/18)
+        specification: Beyers Bruno (v1 05/03/18)
+                       Prignon Alan (v2 05/03/18)
+    """
+def unlock_portail(pos_1_column,pos_1_line):
+    """
+        Parameters:
+        -----------
+        pos_1_line: x position of first portal
+        pos_1_column: y position of first portal
+
+        Notes:
+        -----
+        must be lock before by an extractor
+        Version:
+        --------
+        specification: Prignon Alan (v1 05/03/18)
     """
 
 #-----------------------------------------------------------------------------------------------------------------------
