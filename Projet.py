@@ -240,4 +240,25 @@ def phase_four():
         Version:
         --------
         specification: Beyers Bruno (v1.0 03/02/18)
+   """
+def asteroid_epuise(structure_de_donnees):
+    """
+        Répartis équitablement les ores en cas d'épuisement
+
+        Paramètres:
+        -----------
+        structure_de_donnees: Nombre d'ores restant dans la structure de donnees (Dictionnaire(int))
+        
+        Note:
+        -----
+        La structure de donnée n'a pas encore de nom (variable)
+        
+        Return:
+        -------
+        nbr_ores: Nombre d'ores attribué au joueur(int)
+        
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 05/03/18)
+        
     """
