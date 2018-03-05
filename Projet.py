@@ -1,11 +1,18 @@
 # -*- coding: utf-8 -*-
 #PRÉ-PHASE **********************
+def starting_ores():
+"""
+At the beginning of the game, allow four ores to the differents players
+
+Version:
+specification: Prignon Alan (v1 05/03/18)
+"""
 def ui_informations():
     """
     Display, on the screen, the UI informations for the player
     
     Version:
-    specification : Alan Prignon (v1 05/03/18) 
+    specification : Prignon Alan (v1 05/03/18) 
     """
 
 def portals_informations():
@@ -13,7 +20,7 @@ def portals_informations():
     Display, on the screen , the portals informations for the player
     
     Version:
-    specification : Alan Prignon (v1 05/03/18)
+    specification : Prignon Alan (v1 05/03/18)
     """
 
 def asteroids_informations():
@@ -21,7 +28,7 @@ def asteroids_informations():
     Display, on the screen , the asteroids informations for the player
     
     Version : 
-    specification : Alan Prignon (v1 05/03/18)
+    specification : Prignon Alan (v1 05/03/18)
     """
 
 def create_ui (nbr_line,nbr_column):
