@@ -1,207 +1,243 @@
 # -*- coding: utf-8 -*-
 #PRÉ-PHASE **********************
-def starting_ores():
-"""
-At the beginning of the game, allow four ores to the differents players
-
-Version:
-specification: Prignon Alan (v1 05/03/18)
-"""
-def ui_informations():
+def game_management():
     """
-    Display, on the screen, the UI informations for the player
-    
-    Version:
-    specification : Prignon Alan (v1 05/03/18) 
+        Fait appel fonctions avec les informations de l'ui, des portails et des astéroides.
+
+        version:
+        -------
+        specification: Bechet Francois (v.1 02/03/18)
     """
 
-def portals_informations():
-    """
-    Display, on the screen , the portals informations for the player
-    
-    Version:
-    specification : Prignon Alan (v1 05/03/18)
-    """
-
-def asteroids_informations():
-    """
-    Display, on the screen , the asteroids informations for the player
-    
-    Version : 
-    specification : Prignon Alan (v1 05/03/18)
-    """
-
-def create_ui (nbr_line,nbr_column):
+def create_ui ():
     """
         Création de l'interface graphique.
 
-        Paramètres:
-        -----------
-        nbr_line: lines number in y (int)
-        nbr_column: columns number in x (int)
+        Version:
+        --------
+        specification: Beyers Bruno (v1.1 03/03/18)
+
+    """
+def create_portals():
+    """
+        Mise en place des portails
+
+        Return:
+        -------
+        portail_axe: Postion, vie et emplacement du portail allié (dico)
+        portail_allie: Postion, vie et emplacement du portail ennemi (dico)
 
         Version:
         --------
-        specification: Beyers Bruno (v1 03/03/18)
-
-    """
-def create_portals (pos_1_line,pos_1_column,pos_2_line,pos_2_column):
-    """
-        Setup and live points attribution of the portals
-
-        Parameters:
-        -----------
-        pos_1_line: x position of first portal
-        pos_1_column: y position of first portal
-        pos_2_line: x position of second portal
-        pos_2_column: y position of second portal
-
-        Version:
-        --------
-        specification: Beyers Bruno (v1 03/03/18)
-
-
+        specification: Beyers Bruno (v1.0 03/03/18)
     """
 def create_asteroids():
     """
-        ##Comment savoir combien il y a d'astéroides dans le fichier? Crer fct get_number_astéroide et puis?
+        Mise en place des asteroids
 
-    """
-#PHASE 1 **************************
-def phase_one():
-    """
-        regrouper les informations sur les vaisseaux
-        
+        Return:
+        -------
 
         Version:
         --------
-        specification: Beyers Bruno (v1 03/02/18)
+        specification: Beyers Bruno (v1.0 03/03/18)
     """
 
-def store(ores):
-    """
-        spaceship purchase
 
-        parameters:
+#PHASE 1 **************************
+def phase_one():
+    """
+        Appel les fonctions de la phase une
+
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 03/02/18)
+    """
+
+def ores(Structure_de_donnees):
+    """
+        Indique le nombre d'ores des joueurs
+
+        Paramètre:
         ----------
-        ores: ore quantity(int)
+        Structure_de_donnees: Nombre de minerais dans la structure de données (dictionnaire(int))
 
         Note:
         -----
-        ore number must be strictly positive
+        Doit être strictement positif
+        4 ores offert au début de partie
+        La structure de donnée n'a pas encore de nom (variable)
+
+        Returns:
+        --------
+        nbr_ores: Nombre d'ores actuel (int)
+
+        Version:
+        --------
+        spécification: Beyers Bruno (v1.0 05/03/18)
+    
+     """
+
+def store(nbr_ores):
+    """
+        Achat de vaisseaux
+
+        parameter:
+        ----------
+        Structure_de_donnees: nombre de minerais disponible (dictionnaire(int))
+
+        Note:
+        -----
+        Le nombre de minerais doit être strictement positif
 
         version:
         --------
         specification: Beyers Bruno (v.1 03/03/18)
 
     """
-def spaceship ()
+def get_stats_vaisseaux(type):
     """
-        search spaceships characteristics in a file
-    :return: 
+        rechercher les caractéristiques des vaisseaux dans la structure de données
+
+        Paramètres:
+        -----------
+        type: type du vaisseau (dictionnaire(float))
+
+        Note:
+        -----
+        5 types possible : scout,warship,excavator-S,-M,-L.
+
+        Return:
+        -------
+        type_vaisseau: Renvois la taille, tonnage, vie, attaque, portée et coup d'un vaisseau (liste)
+
+        Version:
+        --------
+        spécification: Beyers Bruno (v1.0 05/03/18)
     """
-def attack(damage, scope):
-    """ attack the ennemy if the scope is enough
+def spawn_vaisseaux(pos_portail_x,pos_portail_y):
+    """
+        Fait apparaître les vaisseaux au centre de portail
+
+        Paramètres:
+        -----------
+        pos_portail_x: position x du centre du portail
+        pos_portail_y: position y du centre du portail
+
+        Note:
+        -----
+        Ne peut apparaître qu'au centre du portail
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 05/03/18)
+
+
+    """
+
+#PHASE 2 **********************************
+def phase_two():
+    """
+        Appel les fonctions de la phase deux
+
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 03/02/18)
+    """
+def lock():
+    """
+        Verrouiller un astéroide pour la récole automatique
+
+        Note:
+        -----
+        Ne peut être lock que par un extracteur
+
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 04/03/18)
+    """
+def Unlock():
+    """
+        Déverouille un astéroide pour la récole automatique
+
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 04/03/18)
+    """
+#PHASE 3 *************************************************
+def phase_three():
+    """
+        Appel les fonctions de la phase trois
+
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 03/02/18)
+    """
+
+def attack(type_vaisseau):
+    """ attaque l'adversaire 
 
         parameters:
         -----------
-        damage: inflicted damages (int)
-        scope: attack scope (int)
+        type_vaisseau: Caractéristique (attaque/portée) du vaisseau sélectionné (liste)
 
         Note:
         ----
-        scope and damages must be strictly positive
+        La portée et les dégats doivent être strictement positif
+        Les extracteurs ne peuvent attaquer
 
         version:
         --------
         specification: Beyers Bruno (v.1 02/03/18)
     """
-
-#PHASE 2 **********************************
-def lock_asteroid(pos_x_asteroid,pos_y_asteroid):
+def deplacement(structure_de_donnees):
     """
-        lock an asteroid, for automatic collect
-
-        Parameters:
+        Déplace le vaisseau
+        
+        Paramètres:
         -----------
-        pos_x_asteroid: x position of an asteroid
-        pos_y_asteroid: y position of an asteroid
-
-        Notes:
+        structure_de_donnees: emplacement du vaisseau actuel (dictionnaire(liste(int)))
+        
+        Note:
         -----
-        locked position must contain an asteroid
-        must be only locked by an exctractor
-
+        La structure de donnée n'a pas encore de nom (variable)
+        Ne peut se déplacer hors de l'UI
+        
+        return:
+        -------
+        Vaissseau_emplacement: Coordonnée du vaisseau une fois déplacé (liste(int))
+        
         Version:
         --------
-        specification: Beyers Bruno (v1 04/03/18)
-                       Prignon Alan (v2 05/03/18)
-    """
-def unlock_asteroid(pos_x_asteroid,pos_y_asteroid):
-    """
-        unlock an asteroid
-
-        Parameters:
-        -----------
-        pos_x_asteroid: x position of an asteroid
-        pos_y_asteroid: y position of an asteroid
-
-        Notes:
-        -----
-        must be lock before by an exctractor
-
-        Version:
-        --------
-        specification: Prignon Alan (v1 05/03/18)
+        specification: Beyers Bruno (v1.0 05/03/18)
+        
     """
     
-def lock_portail(pos_1_column,pos_1_line):
+def end(nbr_tour,health_portail):
     """
-        Parameters:
+        Met fin à la partie
+    
+        Paramètres:
         -----------
-        pos_1_line: x position of first portal
-        pos_1_column: y position of first portal
-
-        Notes:
+        nbr_tour: nombre de tour sans dégât occasionné(int)
+        health_portail: Point de vie du portail(int)
+        
+        Note:
         -----
-        must be only locked by an exctractor
+        La partie se termine si 20 tour se sont passé sans dégât occasionné
+        La parti se termine si la vie du portail est à 0
+        
+        Version:
+        --------
+        specification: Beyers Bruno (v1.0 05/03/18)
+        
+    """
+    
+#PHASE 4 *********************************
+def phase_four():
+    """
+        Appel les fonctions de la phase quatre
 
         Version:
         --------
-        specification: Beyers Bruno (v1 05/03/18)
-                       Prignon Alan (v2 05/03/18)
+        specification: Beyers Bruno (v1.0 03/02/18)
     """
-def unlock_portail(pos_1_column,pos_1_line):
-    """
-        Parameters:
-        -----------
-        pos_1_line: x position of first portal
-        pos_1_column: y position of first portal
-
-        Notes:
-        -----
-        must be lock before by an extractor
-        Version:
-        --------
-        specification: Prignon Alan (v1 05/03/18)
-    """
-
-#-----------------------------------------------------------------------------------------------------------------------
-
-
-    # def health(health):
-    """ health points of portals and spaceships
-
-        Parameters:
-        ----------
-        health: health points (int)
-
-        Notes:
-        -----
-        health points must be strictly positive
-
-        version:
-        --------
-        specifcation: Beyers Bruno (v.1 02/3/18)
-    """
-
