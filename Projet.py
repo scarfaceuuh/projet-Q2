@@ -1,13 +1,27 @@
 # -*- coding: utf-8 -*-
 #PRÉ-PHASE **********************
-def game_management():
+def ui_informations():
     """
-        Regrouping informations of UI, portals, asteroids.
-        
+    Display, on the screen, the UI informations for the player
+    
+    Version:
+    specification : Alan Prignon (v1 05/03/18) 
+    """
 
-        version:
-        -------
-        specification: Bechet Francois (v.1 02/03/18)
+def portals_informations():
+    """
+    Display, on the screen , the portals informations for the player
+    
+    Version:
+    specification : Alan Prignon (v1 05/03/18)
+    """
+
+def asteroids_informations():
+    """
+    Display, on the screen , the asteroids informations for the player
+    
+    Version : 
+    specification : Alan Prignon (v1 05/03/18)
     """
 
 def create_ui (nbr_line,nbr_column):
