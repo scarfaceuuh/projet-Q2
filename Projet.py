@@ -93,7 +93,7 @@ def store(nbr_ores):
 
         version:
         --------
-        specification: Beyers Bruno (v.1 03/03/18)
+        specification: Bechet François (v.2 03/03/18)
 
     """
 def get_stats_spaceships(type):
@@ -190,7 +190,7 @@ def attack(type_vaisseau):
         --------
         specification: Beyers Bruno (v.1 02/03/18)
     """
-def moes(data_structure):
+def moves(data_structure):
     """
         move spaceship
         
@@ -263,3 +263,12 @@ def asteroid_sold_out(data_structure):
         specification: Beyers Bruno (v1.0 05/03/18)
         
     """
+def illegal_action():
+    """
+    verify if the player action can be effectued
+    note:
+    -----
+    check if player action is legal
+    Version:
+    --------
+    specification: Bechet François(v1.0 05/03/18)
